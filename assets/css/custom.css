@@ -82,3 +82,23 @@ code, kbd, pre, samp {
     margin: 8% 0%;
   
 }
+.project_title{
+    font-size: 1.2em;
+}
+@media screen and (min-width: 64em) {
+    .project_title {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (min-width: 42em) and (max-width: 64em) {
+    .project_title {
+        font-size: 0.85em;
+    }
+}
+
+@media screen and (max-width: 42em) {
+    .project_title {
+        font-size: 0.8em;
+    }
+}
