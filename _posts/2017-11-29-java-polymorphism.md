@@ -4,7 +4,7 @@ lang: en
 category: articles
 layout: post
 tagline: Third pillar of OOP
-image: "/assets/img/profile-small.png"
+image: "assets/img/unsplash/coding.jpg"
 feature-img: "assets/img/unsplash/coding.jpg"
 tags:
 - Java

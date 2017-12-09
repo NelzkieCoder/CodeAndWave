@@ -2,7 +2,7 @@
 layout: post
 title: Java - The this Keyword
 tagline: "Not this again!"
-image: /assets/img/profile-small.png
+image: "assets/img/unsplash/coding.jpg"
 feature-img: "assets/img/unsplash/coding.jpg"
 tags: ["Java","Fundamentals"]
 keywords: Java, Fundamentals, This, This Keyword

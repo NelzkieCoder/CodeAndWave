@@ -3,6 +3,9 @@ baseurl: ""
 url: "www.codeandwave.com"
 permalink: /:title/
 
+author: "CodeAndWave"
+publisher: "CodeAndWave"
+
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
   # Meta
