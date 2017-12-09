@@ -4,7 +4,7 @@ lang: en
 category: articles
 layout: post
 tagline: Second pillar of OOP
-image: "assets/img/unsplash/coding.jpg"
+image: https://postimg.org/image/vefxherup/
 feature-img: "assets/img/unsplash/coding.jpg"
 tags:
 - Java

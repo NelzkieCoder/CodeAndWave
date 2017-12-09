@@ -2,7 +2,7 @@
 title: Java OOP - Encapsulation
 layout: post
 tagline: The Fourth Pillar of OOP
-image: "assets/img/unsplash/coding.jpg"
+image: https://postimg.org/image/vefxherup/
 feature-img: "assets/img/unsplash/coding.jpg"
 tags:
 - Java

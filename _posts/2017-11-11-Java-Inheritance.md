@@ -2,7 +2,7 @@
 layout: post
 title: Java OOP - Inheritance
 tagline: "The First Pillar of OOP"
-image: "assets/img/unsplash/coding.jpg"
+image: https://postimg.org/image/vefxherup/
 feature-img: "assets/img/unsplash/coding.jpg"
 tags: ["Java","OOP"]
 keywords: Java, OOP, Inheritance
