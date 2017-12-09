@@ -83,11 +83,11 @@ code, kbd, pre, samp {
   
 }
 .project_title{
-    font-size: 1.2em;
+    font-size: 1em;
 }
 @media screen and (min-width: 64em) {
     .project_title {
-        font-size: 0.9em;
+        font-size: 1em;
     }
 }
 
@@ -102,3 +102,34 @@ code, kbd, pre, samp {
         font-size: 0.8em;
     }
 }
+.image_feature_project{
+    width: 60%;
+    height: 80%;
+}
+
+@media screen and (min-width: 64em) {
+    .image_feature_project{
+        width: 60%;
+        height: 80%;
+    }
+}
+
+@media screen and (min-width: 42em) and (max-width: 64em) {
+    .image_feature_project {
+        width: 70%;
+        height: 90%;
+    }
+}
+
+@media screen and (max-width: 42em) {
+    .image_feature_project {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.portfolio * .portfolio-item .portfolio-link .caption{
+    width: 60%;
+
+}
+
