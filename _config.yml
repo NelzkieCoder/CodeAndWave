@@ -1,6 +1,6 @@
 # SITE CONFIGURATION
 baseurl: ""
-url: "www.codeandwave.com"
+url: ""
 permalink: /:title/
 
 # THEME-SPECIFIC CONFIGURATION
