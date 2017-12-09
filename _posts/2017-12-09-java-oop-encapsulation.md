@@ -9,7 +9,7 @@ tags:
 - OOP
 keywords: Java, OOP, Encapsulation
 lang: en
-date: '2017-11-11 08:13:28 +0000'
+date: '2017-12-09 08:13:28 +0000'
 category: articles
 ---
 
