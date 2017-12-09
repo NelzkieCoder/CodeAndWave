@@ -5,7 +5,7 @@ permalink: /:title/
 
 author: "CodeAndWave"
 publisher: "CodeAndWave"
-
+image: /assets/img/unsplash/coding.jpg
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
   # Meta
