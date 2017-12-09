@@ -10,7 +10,7 @@ tags:
 - OOP
 keywords: Java, OOP, Encapsulation
 lang: en
-date: '2017-12-09 08:13:28 +0000'
+date: '2017-11-11 08:13:28 +0000'
 category: articles
 ---
 
@@ -95,8 +95,8 @@ public static void main(String[] args) {
 }
 ```
 
-This won't probably make sense on small  code base, but if you are working on **large code**, you wouldn't wanna accidentally change a field's data critical on your app just because you are too lazy to use accessors and setting the field to private. **Remeber**, by default when you declare a field on java, it's default access modifier is **protected**. That's why we have to manually set it to private We all know bug hunting is not fun at all.
+Like I said this won't probably make sense on small  code base, but if you are working on **large code**, you wouldn't wanna accidentally change a field's data critical on your app just because you are too lazy to use accessors and setting the field to private. **Remeber**, by default when you declare a field on java, it's default access modifier is **protected** so we have to manully set it to **private**.
 
 
-Conclusion:
-No matter the size of our code base, it is a **good practice to always encapsulate our code**. Yeah, I know we are lazy and we don't want to type too much so it can be tempting to just make all fields public, but with IDE becoming  smarter than it was, it  only take two keystroke on Intellij to make a field accessors(***getter and setters***)  so there really is no reason not to encapsulate our code unless, you want headache.
+## Conclusion
+No matter the size of our code base, it is a **good practice to always encapsulate our code**. Yeah, I know we are lazy and we don't want to type too much so it can be tempting to just make all fields public, but with IDE becoming  smarter than it was, it  only take two keystroke on Intellij to make a field accessors(***getter and setters***),  so there really is no reason not to encapsulate our code unless...  unless  you want headache.
