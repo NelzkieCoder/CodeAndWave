@@ -11,7 +11,7 @@ tags:
 - OOP
 keywords: Java, OOP, Polymorphism, 
 date: '2017-11-29 08:13:28 +0000'
-
+publisher: "CodeAndWave"
 ---
 
 Polymorphism is the ability of an object to **transform to different forms**. "*Poly*" means "many" and "*morphs*" means "forms" so meaning, "*many forms*". Polymorphism can only be achieved through [inheritance]({% post_url 2017-11-11-Java-Inheritance %}), meaning by extending to a base class.

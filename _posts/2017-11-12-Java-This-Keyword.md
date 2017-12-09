@@ -9,6 +9,7 @@ keywords: Java, Fundamentals, This, This Keyword
 lang: en
 date: 2017-11-12T08:13:28+00:00
 category: articles
+publisher: "CodeAndWave"
 ---
 
 The **this** keyword can be very confusing for beginners because we don't know what is the **this** keyword referring to. In this topic we'll dicuss the use of **this** keyword in Java.

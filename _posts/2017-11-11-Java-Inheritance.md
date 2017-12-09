@@ -9,6 +9,7 @@ keywords: Java, OOP, Inheritance
 lang: en
 date: 2017-11-11T08:13:28+00:00
 category: articles
+publisher: "CodeAndWave"
 ---
 
 Inheritance is one of the 4 pillars of Object Oriented Programming commonly known as **'OOP'**

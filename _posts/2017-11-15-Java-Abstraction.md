@@ -11,6 +11,7 @@ tags:
 - OOP
 keywords: Java, OOP, Abstraction
 date: '2017-11-15 08:13:28 +0000'
+publisher: "CodeAndWave"
 ---
 
 Abstraction is a way of well making a certain object abstract. It is a way of **hiding the implementation** to the user. Abstract classes also can't be instantiated but can only be subclassed(derived from it). Meaning you can't do it like this:

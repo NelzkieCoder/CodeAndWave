@@ -11,6 +11,7 @@ keywords: Java, OOP, Encapsulation
 lang: en
 date: '2017-12-09 08:13:28 +0000'
 category: articles
+publisher: "CodeAndWave"
 ---
 
 ## What is encapsulation?

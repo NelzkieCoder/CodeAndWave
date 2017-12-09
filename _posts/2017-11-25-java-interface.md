@@ -11,6 +11,7 @@ tags:
 - OOP
 keywords: Java, Fundamentals, This, This Keyword
 date: '2017-11-25 08:13:28 +0000'
+publisher: "CodeAndWave"
 ---
 
 Java Interface is bit like [abstract class]({% post_url 2017-11-15-Java-Abstraction%}) but with the exception that an interface **can only** have a method declaration and fields. Nothing more nothing less.  The definition of methods will be on the classes that implemented the interface. While abstract classes can have a concrete method inside it, an interface cannot. It is also worth noting that methods declared on interfaces are always abstract. 
