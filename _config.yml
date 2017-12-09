@@ -79,7 +79,7 @@ paginate_path: "blog/page:num"
 collections:
   portfolio:
     output: true
-    permalink: /:title/
+    permalink: /:collection/:name
 
 # BUILD SETTINGS
 markdown: kramdown
