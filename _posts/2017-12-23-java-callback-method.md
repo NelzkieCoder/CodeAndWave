@@ -6,7 +6,8 @@ feature-img: assets/img/unsplash/coding.jpg
 tags:
 - Java
 - OOP
-keywords: Java, OOP, Inheritance
+- Android
+keywords: Java, OOP, CallBack, callback, fragment, android
 lang: en
 category: articles
 publisher: CodeAndWave
