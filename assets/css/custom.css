@@ -133,3 +133,13 @@ code, kbd, pre, samp {
 
 }
 
+img[alt=image_blog] { 
+    width: 400px;
+    height: 400px;
+
+}
+.callback{
+    font-size: 0.8em;
+    font-style: italic;
+}
+
