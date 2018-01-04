@@ -7,6 +7,7 @@ date: 27 October 2017
 tags:
 - Projects
 publisher: CodeAndWave
+mobile_download: https://play.google.com/store/apps/details?id=com.nelzkie.coder.justfortoday
 ---
 
 ## My first project that I actually release
@@ -20,7 +21,7 @@ The app is simple but during the whole journey, I learned a lot just by developi
 The first design I had on the app sucks and lags so bad. So created the app from the scratch  using the full power of MVP. I must say, it serve me quite well.
 
 ### Download here
-You can check the <span style="color:#;">**Repeat**</span> app here [google play store page ]({{page.mobile_download.google_play}})
+You can check the <span style="color:#;">**Repeat**</span> app here [google play store page ]({{page.mobile_download}})
 
 #### Screen Shots
 
