@@ -1,37 +1,33 @@
 ---
-layout: post
 title: Repeat - Simple habit and goal tracker
-feature-img: "assets/img/repeat/6.png"
-img: "assets/img/repeat/1.png"
+layout: post
+feature-img: assets/img/repeat/7.png
+img: assets/img/repeat/7.png
 date: 27 October 2017
-tags: [Projects]
-publisher: "CodeAndWave"
+tags:
+- Projects
+publisher: CodeAndWave
 ---
 
-
-#### **A simple goal and habit tracker that works**.
-
-This is my first completed android project release on google play. The app focus on the core concept of habit tracking, but with added concept of
-choosing between the pain of regret or the pain of discipline.
+## My first project that I actually release
+Though I have been programming for quite a while now and got a lot of projects in my hard drive, this is actually my first project in android to be release(since mostly I focus on game programming) and boy what a great feeling. I will add more features in the coming months. This project is an on going process. I will keep adding features until I am satisfied.
 
 <!--break-->
-#### **So why name Repeat**
-In order to form a new <span style="color:#;">habit</span>, one must do it a lot of times (<span style="color:#;">*70 days*</span>) hence the name <span style="color:#;">**Repeat**</span>.
 
-The app focus on <span style="color:#;">**simplicity**</span>. <span style="color:#;">**No**</span> <span style="color:#;">*confusing*</span> UI or graphs (*graphs stresses me out*) instead the app motivates you not by actually looking at the graphs or calendar but by reminding you the feelings or emotion you will get if you accomplished your goal or failed to do it. Think of it this way, we all do something for a reason, it's either that will make us <span style="color:#;">**happy**</span> or that will make us <span style="color:#;">**misserable**</span>.
+The app is simple but during the whole journey, I learned a lot just by developing this apps.  I put those lessons learned on my list and read it when I am about to do my next app.
 
-#### **Why we do what we do**
-Do you go to a job that you really really hate? If yes, why do yo go there in the first place? You know why? It's because it is more painful if we don't have a job and don't have any food on our plate and that is even worse if we have a family to support. This is the <span style="color:#;">core concept</span> of the app, when you're feeling lazy the app reminds you of the consequence if you didn't do it, at the same time it will also remind you of the positive things that will happen if you do the newly formed habit.
+### Complete UI redesign.
+The first design I had on the app sucks and lags so bad. So created the app from the scratch  using the full power of MVP. I must say, it serve me quite well.
 
-#### **You don't have to read notification anymore**
-I decided to add a google voice that will read my task for me for those people who don't read their notification. Pretty neat.
-
-#### **Free and will remain to be so**
-The app is completely free and no ads whatsoever. The app will be updated a lot. I will soon add features that I think will make the experience for users better.
-
-
+### Download here
 You can check the <span style="color:#;">**Repeat**</span> app here [google play store page ]({{page.mobile_download.google_play}})
 
+#### Screen Shots
 
+[![project_ss]({{site.baseurl}}/assets/img/repeat/7.png)]({{site.baseurl}}/assets/img/repeat/7.png)
+[![project_ss]({{site.baseurl}}/assets/img/repeat/17.png)]({{site.baseurl}}/assets/img/repeat/17.png)
+[![project_ss]({{site.baseurl}}/assets/img/repeat/18.png)]({{site.baseurl}}/assets/img/repeat/18.png)
+[![project_ss]({{site.baseurl}}/assets/img/repeat/19.png)]({{site.baseurl}}/assets/img/repeat/19.png)
+[![project_ss]({{site.baseurl}}/assets/img/repeat/20.png)]({{site.baseurl}}/assets/img/repeat/20.png)
 
-
+##### Feel free to rate or message me.

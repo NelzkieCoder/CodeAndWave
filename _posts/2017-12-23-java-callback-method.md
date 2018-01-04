@@ -108,6 +108,7 @@ I know, confusiiiiiiiiing! Here might help to visualize
 
 
 
+
 ### Android Example
 I said from the start that I learned callbacks because I was using fragments. Well here is an example
 

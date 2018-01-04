@@ -138,8 +138,17 @@ img[alt=image_blog] {
     height: 400px;
 
 }
+img[alt=project_ss] { 
+    width: 200px;
+    height: 250px;
+
+}
 .callback{
     font-size: 0.8em;
     font-style: italic;
 }
 
+iframe, img, embed, object, video {
+    max-width: 100%;
+    padding: 0 2%;
+}
