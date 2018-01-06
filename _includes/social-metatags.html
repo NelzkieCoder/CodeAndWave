@@ -63,14 +63,15 @@
 <meta name="twitter:card" content="summary_large_image" />
 
 {%if site.twitter.site %}
-  <meta name="twitter:site" content="@{{ site.twitter.site }}" />
+  <meta name="twitter:site" content="@{{ site.twitter }}" />
 {%endif %}
 
 <meta name="twitter:title" content="{{ page_title }}" />
 <meta name="twitter:description" content="{{ page_description }}" />
+<meta name="twitter:domain" content="www.codeandwave.com" />
 
 {%if twitter_creator %}
-  <meta name="twitter:creator" content="@{{ twitter_creator }}" />
+  <meta name="twitter:creator" content="@{{ site.twitter }}" />
 {%endif %}
 
 <!-- Twitter summary card with large image must be at least 280x150px -->
