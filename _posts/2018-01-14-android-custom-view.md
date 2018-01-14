@@ -1,5 +1,5 @@
 ---
-title: 'Android Tip 1: Custom Views'
+title: 'Android Tips 1: Custom Views'
 layout: post
 image: https://postimg.org/image/vefxherup/
 feature-img: assets/img/unsplash/coding.jpg
