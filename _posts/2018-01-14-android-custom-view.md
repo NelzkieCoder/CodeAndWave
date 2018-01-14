@@ -4,8 +4,8 @@ layout: post
 image: https://postimg.org/image/vefxherup/
 feature-img: assets/img/unsplash/coding.jpg
 tags:
-- Java
-- OOP
+- Android
+- Tips
 keywords: Android, Custom Views, Android tips
 lang: en
 category: articles
