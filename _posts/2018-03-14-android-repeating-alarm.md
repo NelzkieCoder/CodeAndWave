@@ -137,7 +137,7 @@ alarmManager.setExact(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), pendi
 
 #### The PROBLEM!
 
-Notice something on our solutions? On the first solution since we canceled it on weekends, there is no way of setting it back once monday comes. Same can be said to our second solution, since we are setting it manually when weekend comes we just stop resetting it but once weekdays starts there is no way of setting it back. To remedy this, the solution i could think of is that we need to have **another alarm manager that would keep on firing every day** to check if it is weekdays or weekend and then the daily alarm manager appropriately.
+Notice something on our solutions? On the first solution since we canceled it on weekends, there is no way of setting it back once monday comes. Same can be said to our second solution, since we are setting it manually when weekend comes we just stop resetting it but once weekdays starts there is no way of setting it back. To remedy this, the only solution I could think of is that we need to have **another alarm manager that would keep on firing every day** to check if it is weekdays or weekend and then the daily alarm manager appropriately.
 
 
 ### Doze Mode
