@@ -116,7 +116,7 @@ In this code
 ```java
 HelloLamdba =  () -> System.out.println("Hello there");
 ```
-How do we know what is the type of HelloLambda? Well unfortunately java engineers didn't add any new data type in java but instead make use of the power of **[interface]({% post_url 2017-11-25-java-interface %})**. Abstract method declared on our interface **must match the signature of our lambda expression** in order to make our interface the data type of our `HelloLambda` variable.
+How do we know what is the type of HelloLambda? Well, unfortunately java engineers didn't add any new data type in java but instead make use of the power of **[interface]({% post_url 2017-11-25-java-interface %})**. Abstract method declared on our interface **must match the signature of our lambda expression** in order to make our interface the data type of our `HelloLambda` variable.
 
 ```java
 interface HelloGreeter{
@@ -124,16 +124,16 @@ interface HelloGreeter{
     }
 ```
 
-Here our `sayIt()` is a void and doesn't return anything. It's the same as our lambda expression it is a void and doesn't return anything. You can only use a **function interface**as a data type when declaring a lambda.
+Here, our `sayIt()` is a void and doesn't return anything. It's the same as our lambda expression it is a void and doesn't return anything. You can only use a **function interface** as a data type when declaring a lambda.
 
 ### What is Function Interface
 A Function Interface is an interface with only one abstract method. To restrict other people from adding another method on our functional interface we use the `@FunctionalInterface` annotation in Java 8.
 
 ### Lambda Syntax with arguments
 
-Say we want to have a function that would add two numbers
+Say we want to have a function that would add two numbers.
 
-On Java 7 we would do it like this
+On Java 7 we would do it like this.
 
 ```java
 public class CalculateArgs {
@@ -176,7 +176,7 @@ A bit confusing but here take a look
 
 [![]({{site.baseurl}}/assets/img/blog/lambda2.png)]({{site.baseurl}}/assets/img/blog/lambda.png)
 
-The value 5 with <span style="color:red" >red</span> underline is pass to variable `a` and the other 5 with <span style="color:green" >green</span> underline is pass to variable `b` and notice that the function literal `(a, b) -> a + b` is exactly the same as on the anonymous inner class `add()` we define. The only difference is that on java 7 we have 3 line of code while on java 8 lambda its only one liner. Also, if lambda expresion is one liner, we can just **omit** the **return** keyword if it is returning something.
+The value 5 with <span style="color:red" >red</span> underline is pass to variable `a` and the other 5 with <span style="color:green" >green</span> underline is pass to variable `b` and notice that the function literal `(a, b) -> a + b` is exactly the same as on the anonymous inner class `add()` we define. The only difference is that on java 7 we have 3 lines of code while on java 8 lambda its only one liner. Also, if lambda expresion is one liner, we can just **omit** the **return** keyword if it is returning something.
 
 #### Type Inference
 We could omit the data type `int` of `a` and `b` to make it look like this
