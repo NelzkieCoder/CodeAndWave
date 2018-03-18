@@ -273,4 +273,4 @@ I wouldn't worry too much about method reference. If you are using Intellij Idea
 
 ### Conclusion
 
-Learning lambda is pretty hard especially for someone who is used to OOP. It requires a different thinking pattern. But with practice and patience you will soon understand and like this awesome feature of Java 8. The next topic I will talk about how to implement Lambda on android. It will be pretty easy now that we have covered the basics of lambda. Until code and wave people just code and wave.
+Learning lambda is pretty hard especially for someone who is used to OOP. It requires a different thinking pattern. But with practice and patience you will soon understand and like this awesome feature of Java 8. The next topic I will talk about how to implement Lambda on android. It will be pretty easy now that we have covered the basics of lambda. Until then, code and wave people just code and wave.
