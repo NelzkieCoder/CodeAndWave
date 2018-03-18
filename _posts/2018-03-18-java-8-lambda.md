@@ -13,7 +13,7 @@ category: articles
 publisher: CodeAndWave
 ---
 
-Lambda expression is mainly used in functional programming such as Kotlin. I never plan to learn Java 8 Lambda before as I thought android won't support it. Everything change until I found a library for android that gives you the power to use Lambda on android. I must admit learning Lambda was quite hard.  It takes time to get used to syntax especially for someone who is used to object oriented programming. Hopefully this guide will help you understand the basics of Lambda in Java 8. Let's get started.
+Lambda expression is mainly used in functional programming such as Kotlin. I never plan to learn Java 8 Lambda before as I thought android won't support it. Everything change until I found a library for android that gives you the power to use Lambda. I must admit learning Lambda was quite hard.  It takes time to get used to syntax especially for someone who is used to object oriented programming. Hopefully this guide will help you understand the basics of Lambda in Java 8. Let's get started.
 
 Before we start. Let's ask the question:
 
