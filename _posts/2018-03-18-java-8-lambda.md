@@ -13,12 +13,12 @@ category: articles
 publisher: CodeAndWave
 ---
 
-Lambda expression is mainly used in functional programming such as Kotlin. I never plan to learn Java 8 Lambda before as I thought android won't support it. Everything change until I found a library for android that gives you the power to use Lambda. I must admit learning Lambda was quite hard.  It takes time to get used to syntax especially for someone who is used to object oriented programming. Hopefully this guide will help you understand the basics of Lambda in Java 8. Let's get started.
+Lambda expression is mainly used in functional programming such as Kotlin. I never plan to learn Java 8 Lambda before as I thought android won't support it. Everything change until I found a library for android that gives you the power to use Lambda. I must admit learning Lambda was quite hard.  It takes time to get used to syntax especially for someone who is used to object oriented programming. Hopefully this guide will help you understand the basics of Lambda in Java 8.
 
 Before we start. Let's ask the question:
 
 ### Why do we need to learn lambda?
-Well for one, it is mainly used in functional programming like kotlin. So, for anyone wants to learn kotlin or any other functional programming, learning lambda is a must. The other reason is that, you could type less code but still had the same code logic as the other programmer who doesn't use lambda on his/her code. We programmers are naturally lazy (*admit it!*). It is the main reason why we automate things. This typing less code is one of the reason why I  like lambda.
+Well for one, it is mainly used in functional programming like kotlin. So, for anyone wants to learn kotlin or any other functional programming, learning lambda is a must. The other reason is, you could type less code but still had the same code logic as the other programmer who doesn't use lambda on his/her code. We programmers are naturally lazy (*admit it!*). It is the main reason why we automate things. This typing less code is one of the reason why I  like lambda.
 
 ### Lambda Syntax
 Take a look at this code
@@ -26,7 +26,7 @@ Take a look at this code
 (a,b) ->a + b;
 ```
 
-Now at first look, you might be thinking "*What on earth is that code*". Well I was like that when I first saw lambda expresion syntax. I know right. It felt like reading a hieroglyphics writing. Anyway,  what this piece of code is doing right here is just adding the value of `a` and `b`.
+Now at first look, you might be thinking "*What on earth is that code?*". Well, I was like that when I first saw lambda expresion syntax. I know right. It felt like reading a hieroglyphics writing. Anyway,  what this piece of code is doing right here is just adding the value of `a` and `b`.
 
 
 ### The Basics
@@ -63,7 +63,7 @@ public interface IBark {
 }
 ```
 
-With just that simple task we have to type a lot. For small code base that is not a problem but think about large code base with hundreads of lines of code and many classes. Now what if we don't want to create a **new class to make the implementation of the interface** or we don't want to make an **anonymous inner class** like the one we did to define **bark2**? What if we just want this single piece of code and pass it around like a value in a variable? Fortunately we can on Java 8.
+With just that simple task we have to type a lot. For small code base that is not a problem but think about large code base with hundreds of lines of code and many classes. Now what if we don't want to create a **new class to make the implementation of the interface** or we don't want to make an **anonymous inner class** like the one we did to define **bark2**? What if we just want this single piece of code and pass it around like a value in a variable? Fortunately, we can on Java 8.
 
 ```java
  lambdaBark = () -> System.out.println("Woof woof Lambda");
@@ -96,7 +96,7 @@ HelloLamdba = public void Hello(){
         }
 ```
 
-Obviously if you try this on IDE it will show an error. In order to make it acceptable for our IDE we first must remove and replace some part of the code. First, do we need the **public** modifier? On this case no **we don't need the modifier**. Second do we need the `void` keyword? Yes! But in lambda a **void function** is express as `()` - an open and close parenthesis with nothing inside of it.  Next do we need the name `Hello`? In lambda no we don't need to define a name of a function so we remove that. Now, in order to denote to our java compiler that we are declaring a lambda expression we have to use the **arrow operator** `->`.  The code would now look like this
+Obviously if you try this on IDE it will show an error. In order to make it acceptable for our IDE, we first must remove and replace some part of the code. First, do we need the **public** modifier? On this case no, **we don't need the modifier**. Second, do we need the `void` keyword? Yes! But in lambda a **void function** is express as `()` - an open and close parenthesis with nothing inside of it.  Next, do we need the name `Hello`? In lambda, no we don't need to define a name of a function so we remove that. Now, in order to denote to our java compiler that we are declaring a lambda expression we have to use the **arrow operator** `->`.  The code would now look like this
 
 ```java
  HelloLamdba =  () -> {
