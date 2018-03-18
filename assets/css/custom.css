@@ -138,6 +138,11 @@ img[alt=image_blog] {
     height: 400px;
 
 }
+img[alt=image_blog2] { 
+    width: 1000px;
+    height: 400px;
+
+}
 /* Hmmm */
 img[alt=project_ss] { 
     width: 200px;
