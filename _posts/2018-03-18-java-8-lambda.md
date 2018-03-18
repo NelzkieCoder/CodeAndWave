@@ -133,7 +133,7 @@ A Function Interface is an interface with only one abstract method. To restrict 
 
 Say we want to have a function that would add two numbers.
 
-On Java 7 we would do it like this.
+On Java 7 we would do it like this:
 
 ```java
 public class CalculateArgs {
@@ -176,10 +176,10 @@ A bit confusing but here take a look
 
 [![]({{site.baseurl}}/assets/img/blog/lambda2.png)]({{site.baseurl}}/assets/img/blog/lambda.png)
 
-The value 5 with <span style="color:red" >red</span> underline is pass to variable `a` and the other 5 with <span style="color:green" >green</span> underline is pass to variable `b` and notice that the function literal `(a, b) -> a + b` is exactly the same as on the anonymous inner class `add()` we define. The only difference is that on java 7 we have 3 lines of code while on java 8 lambda its only one liner. Also, if lambda expresion is one liner, we can just **omit** the **return** keyword if it is returning something.
+The value 5 with <span style="color:red" >red</span> underline is pass to variable `a` and the other 5 with <span style="color:green" >green</span> underline is pass to variable `b` and notice that the function literal `(a, b) -> a + b` is exactly the same as on the anonymous inner class `add()` we define. The only difference is that on java 7 we have 3 lines of code while on java 8 lambda its only one liner. Also, if lambda expression is one liner, we can just **omit** the **return** keyword if it is returning something.
 
 #### Type Inference
-We could omit the data type `int` of `a` and `b` to make it look like this
+We could omit the data type `int` of `a` and `b` to make it look like this:
 ```java
 Calculate c = ( a,  b) -> a + b;
 ```
@@ -191,14 +191,14 @@ But how does java would know its data type if remove it? Well, you see our funct
         int add(int a, int b);
     }
 ```
-The abstract method `add` has an argument with a data type **explicitly** defined. That means that since we are using this function interface on our lambda expression, the **compiler is smart enough** to  **infer or deduce** the data type for the argument on our lamdba expression base on our function interface. Pretty cool. It can also infer its return type. Take a look at this(sorry about my drawing. I'm really bad at it)
+The abstract method `add` has an argument with a data type **explicitly** defined. That means,  since we are using this function interface on our lambda expression, the **compiler is smart enough** to  **infer or deduce** the data type for the argument on our lamdba expression base on our function interface. Pretty cool. It can also infer its return type. Take a look at this(sorry about my drawing. I'm really bad at it)
 
 [![]({{site.baseurl}}/assets/img/blog/function_interface.png)]({{site.baseurl}}/assets/img/blog/function_interface.png)
 
 
 
 ### Multiple line lambda expression
-We've been practicing on one liner code in lambda. But what if we have multiple lines of code? Pretty easy. We only have to add curly braces. and if it is returning something, add the **return** keyword That's about it.
+We've been practicing on one liner code in lambda. But what if we have multiple lines of code? Pretty easy. We only have to add curly braces and if it is returning something, add the **return** keyword. That's about it.
 
 ```java
 Calculate cc = (a,b)->{
@@ -235,11 +235,11 @@ public class HelloThere {
 }
 ```
 
-This   
+This:   
 ``` java
 helloThere.Hello(() -> helloThere.HelloMethodRef());
 ``` 
-is no different from the one we were doing before. We just pass the method itself and not the expression. That is valid. Now in Java 8 there is a feature called **Method reference**. Basically **if the argument is the same as the method parameter,** we can convert it to method reference. To convert to method reference we must first make sure that the argument in our code is void and the method we are passing doesn't have a parameter. `HelloMethodRef` doesn't have any parameter and that our lambda is void and not returning anything we can make it like this
+is no different from the one we were doing before. We just pass the method itself and not the expression. That is valid. Now in Java 8 there is a feature called **Method reference**. Basically **if the argument is the same as the method parameter,** we can convert it to method reference. To convert to method reference we must first make sure that the argument in our code is void and the method we are passing doesn't have a parameter. `HelloMethodRef` doesn't have any parameter and that our lambda is void and not returning anything. So, we can make it like this:
 
 ```java 
 helloThere.Hello(helloThere::HelloMethodRef);
@@ -273,4 +273,4 @@ I wouldn't worry too much about method reference. If you are using Intellij Idea
 
 ### Conclusion
 
-Learning lambda is pretty hard especially for someone who is used to OOP. It requires a different thinking pattern. But with practice and patience you will soon understand and like this awesome feature of Java 8. The next topic I will talk about how to implement Lambda on android. It will be pretty easy now that we have covered the basics of lambda. Until code and wave peoepl just code and wave.
+Learning lambda is pretty hard especially for someone who is used to OOP. It requires a different thinking pattern. But with practice and patience you will soon understand and like this awesome feature of Java 8. The next topic I will talk about how to implement Lambda on android. It will be pretty easy now that we have covered the basics of lambda. Until code and wave people just code and wave.
