@@ -19,16 +19,16 @@ Java Interface is bit like [abstract class]({% post_url 2017-11-15-Java-Abstract
 <!--break-->
 
 ### Why use Interface?
-* Use in abstraction
+* Use in [abstraction]({% post_url 2017-11-15-Java-Abstraction%})
 * Grants multiple [inheritance]({% post_url 2017-11-11-Java-Inheritance%})
-* Can be use in implementing callbacks
+* Can be use in implementing [callbacks]({% post_url 2017-12-23-java-callback-method%})
 * Use in many design patterns like MVP(Model View Presenter) in android
 * Can be use to achieve loose coupling
 * Can be use in **composition** ( has-a relationship)
 
 ### When and How to use interface?
 
-<p><span class="warning"> <span style="font-weight:bold;">NOTE:</span> For interface to make sense, you must understand how <a href = "{{% post_url 2017-11-12-Java-This-Keyword %}}">abstract class</a> work and its limitations</span></p>
+ <span style="font-weight:bold;">NOTE:</span> For interface to make sense, you must understand how [abstract class]({% post_url 2017-11-15-Java-Abstraction%}) work and its limitations
 
 Continuing our story from [abstract class]({% post_url 2017-11-15-Java-Abstraction%}) where we left it, since we can only extend to one class and we don't want our cat and dog to have a CanFly() method but only the bird class, what we could do is to make an interface called
 CanFly with an abstract method called Fly().

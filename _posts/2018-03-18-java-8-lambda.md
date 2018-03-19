@@ -96,7 +96,7 @@ HelloLamdba = public void Hello(){
         }
 ```
 
-Obviously if you try this on IDE it will show an error. In order to make it acceptable for our IDE, we first must remove and replace some part of the code. First, do we need the **public** modifier? On this case no, **we don't need the modifier**. Second, do we need the `void` keyword? Yes! But in lambda a **void function** is express as `()` - an open and close parenthesis with nothing inside of it.  Next, do we need the name `Hello`? In lambda, no we don't need to define a name of a function so we remove that. Now, in order to denote to our java compiler that we are declaring a lambda expression we have to use the **arrow operator** `->`.  The code would now look like this
+Obviously if you try this on IDE it will show an error. In order to make it acceptable for our IDE, we first must remove and replace some part of the code. First, do we need the **public** modifier? On this case no, **we don't need the modifier**. Second, do we need the `void` keyword? Yes! But in lambda a **void function** is express as `()` - an open and close parenthesis with nothing inside of it.  Next, do we need the name `Hello`? In lambda, no we don't need to define a name of a function so we remove that. Now, in order to denote to our java compiler that we are declaring a lambda expression we have to use the **arrow operator** `->`.  The code would now look like this:
 
 ```java
  HelloLamdba =  () -> {
@@ -124,10 +124,24 @@ interface HelloGreeter{
     }
 ```
 
-Here, our `sayIt()` is a void and doesn't return anything. It's the same as our lambda expression it is a void and doesn't return anything. You can only use a **function interface** as a data type when declaring a lambda.
+Here, our `sayIt()` is a void and doesn't return anything. It's the same as our lambda expression it is a void and doesn't return anything.
+
+```java
+     HelloGreeter HelloLamdba = () -> System.out.println("Hello There");
+```
+Our `HelloGreeter` is an interface with one abstract method that **matches** the signature of our **Lambda Expression**.
+
+**NOTE:** You can only use a **function interface** as a data type when declaring a lambda.
 
 ### What is Function Interface
 A Function Interface is an interface with only one abstract method. To restrict other people from adding another method on our functional interface we use the `@FunctionalInterface` annotation in Java 8.
+
+ ```java
+@FunctionalInterface
+    interface HelloGreeter{
+        void sayIt();
+    }
+```
 
 ### Lambda Syntax with arguments
 
@@ -172,11 +186,11 @@ But on Java 8 lambda it's pretty easy.
     }
 ```
 
-A bit confusing but here take a look
+A bit confusing, yes, but  take a look at this image to better understand it.
 
 [![]({{site.baseurl}}/assets/img/blog/lambda2.png)]({{site.baseurl}}/assets/img/blog/lambda.png)
 
-The value 5 with <span style="color:red" >red</span> underline is pass to variable `a` and the other 5 with <span style="color:green" >green</span> underline is pass to variable `b` and notice that the function literal `(a, b) -> a + b` is exactly the same as on the anonymous inner class `add()` we define. The only difference is that on java 7 we have 3 lines of code while on java 8 lambda its only one liner. Also, if lambda expression is one liner, we can just **omit** the **return** keyword if it is returning something.
+The value 5 with <span style="color:red" >red</span> underline is pass to variable `a` and the other 5 with <span style="color:green" >green</span> underline is pass to variable `b` and notice that the function literal `(a, b) -> a + b` is exactly the same as on the anonymous inner class `add()` we define. The only difference is that on java 7 we have 3 lines of code while on java 8 lambda its only one liner. Also, if lambda expression is **one** liner, we can just **omit** the **return** keyword if it is returning something.
 
 #### Type Inference
 We could omit the data type `int` of `a` and `b` to make it look like this:
@@ -191,7 +205,7 @@ But how does java would know its data type if remove it? Well, you see our funct
         int add(int a, int b);
     }
 ```
-The abstract method `add` has an argument with a data type **explicitly** defined. That means,  since we are using this function interface on our lambda expression, the **compiler is smart enough** to  **infer or deduce** the data type for the argument on our lamdba expression base on our function interface. Pretty cool. It can also infer its return type. Take a look at this(sorry about my drawing. I'm really bad at it)
+The abstract method `add` has an argument with a data type **explicitly** defined. That means,  since we are using this function interface on our lambda expression, the **compiler is smart enough** to  **infer or deduce** the data type for the argument on our lamdba expression base on our function interface. Pretty cool. It can also infer its return type. Take a look at this(sorry about my drawing. I'm really bad at it).
 
 [![]({{site.baseurl}}/assets/img/blog/function_interface.png)]({{site.baseurl}}/assets/img/blog/function_interface.png)
 
@@ -239,14 +253,14 @@ This:
 ``` java
 helloThere.Hello(() -> helloThere.HelloMethodRef());
 ``` 
-is no different from the one we were doing before. We just pass the method itself and not the expression. That is valid. Now in Java 8 there is a feature called **Method reference**. Basically **if the argument is the same as the method parameter,** we can convert it to method reference. To convert to method reference we must first make sure that the argument in our code is void and the method we are passing doesn't have a parameter. `HelloMethodRef` doesn't have any parameter and that our lambda is void and not returning anything. So, we can make it like this:
+is no different from the one we were doing before. We just pass the method itself and not the expression. That is valid. Just make sure that the signature of the method matches the function interface. Now, in Java 8 there is a feature called **Method reference**. Basically **if the argument is the same as the method parameter,** we can convert it to method reference. To convert to method reference we must first make sure that the argument in our code is void and the method we are passing doesn't have a parameter. `HelloMethodRef` doesn't have any parameter and that our lambda is void and not returning anything. So, we can make it like this:
 
 ```java 
 helloThere.Hello(helloThere::HelloMethodRef);
 ```
 
 #### Another example with arguments
-For a code with arguments it the same as without one
+For a code with arguments it's the same as without one:
 
 ```java
  interface Calculate {
@@ -269,7 +283,7 @@ For a code with arguments it the same as without one
     }
 ```
 
-I wouldn't worry too much about method reference. If you are using Intellij Idea, the IDE will suggest to use method reference. Depending on your key biding. Mine is alt-enter, the IDE would replace the lamdba expression with method reference if you want to. I'm not sure about Eclise IDE though.
+I wouldn't worry too much about method reference. If you are using Intellij Idea, the IDE will suggest to use method reference. Depending on your key biding, mine is alt-enter, the IDE would replace the lamdba expression with method reference if you want to. I'm not sure about Eclise IDE though.
 
 ### Conclusion
 
